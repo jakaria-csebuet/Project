@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.shape.*?>
@@ -35,6 +36,9 @@
          <rotationAxis>
             <Point3D x="1.0" y="1.0" z="1.0" />
          </rotationAxis>
+         <effect>
+            <DropShadow />
+         </effect>
       </Pane>
    </children>
    <rotationAxis>

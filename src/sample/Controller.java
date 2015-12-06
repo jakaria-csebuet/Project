@@ -1,9 +1,16 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
+
+import javax.swing.text.html.ImageView;
 
 
 public class Controller {
@@ -40,6 +47,12 @@ public class Controller {
     private Rectangle rec14 ;
     @FXML
     private Rectangle rec15 ;
+
+    public Image image = new Image("sample/steel.jpg",true) ;
+    @FXML
+    private BackgroundImage backgroundImage = new BackgroundImage(image, BackgroundRepeat.REPEAT,BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
+            BackgroundSize.DEFAULT) ;
+
 
 
     String color[] = {"RED" , "BLACK" , "BLUE" , "GREEN"} ;
